@@ -424,3 +424,48 @@ Connexions actives
 
 Firewall
 ![](https://i.imgur.com/HoKsjVO.png)
+
+### III. Manipulations d'autres outils/protocoles côté client
+1. DHCP
+
+Exploration du DHCP, depuis votre PC (ip config /all)
+```
+Serveur DHCP . . . . . . . . . . . . . : 10.33.19.254
+   Bail obtenu. . . . . . . . . . . . . . : lundi 3 octobre 2022 17:15:44
+   Bail expirant. . . . . . . . . . . . . : mercredi 5 octobre 2022 13:48:34
+```
+2. DNS
+
+** Trouver l'adresse IP du serveur DNS que connaît votre ordinateur**
+ (ipconfig /all)
+ Serveurs DNS. . .  . . . . . . . . . . : 8.8.8.8
+                                       8.8.4.4
+                                       1.1.1.1
+
+Utiliser, en ligne de commande l'outil nslookup (Windows, MacOS) ou dig (GNU/Linux, MacOS) pour faire des requêtes DNS à la main
+
+nslookup google.com
+```
+Serveur :   dns.google
+Address:  8.8.8.8
+
+Réponse ne faisant pas autorité :
+Nom :    google.com
+Addresses:  2a00:1450:4007:812::200e
+          216.58.214.78
+```
+
+nslookup ynov.com
+```
+Serveur :   dns.google
+Address:  8.8.8.8
+
+Réponse ne faisant pas autorité :
+Nom :    ynov.com
+Addresses:  2606:4700:20::681a:be9
+          2606:4700:20::ac43:4ae2
+          2606:4700:20::681a:ae9
+          104.26.10.233
+          172.67.74.226
+          104.26.11.233
+```
