@@ -422,3 +422,5 @@ Connexions actives
   TCP    127.0.0.1:61400        LAPTOP-DS0S1GKI:61399  ESTABLISHED
 ```
 
+Firewall
+![](https://i.imgur.com/HoKsjVO.png)
